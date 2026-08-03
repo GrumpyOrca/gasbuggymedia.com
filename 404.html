@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Gasbuggy Media</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Cstyle%3E.s%7Bstroke:%231c1917%7D.f%7Bfill:%23c2410c%7D@media(prefers-color-scheme:dark)%7B.s%7Bstroke:%23ece4d8%7D.f%7Bfill:%23e0561d%7D%7D%3C/style%3E%3Ccircle%20class='s'%20cx='32'%20cy='32'%20r='26'%20fill='none'%20stroke-width='7'%20stroke-dasharray='7.2%206.42'/%3E%3Ccircle%20class='s'%20cx='32'%20cy='32'%20r='12'%20fill='none'%20stroke-width='11'%20stroke-dasharray='12.566%2012.566'%20transform='rotate(-120%2032%2032)'/%3E%3Ccircle%20class='f'%20cx='32'%20cy='32'%20r='4.2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;500&family=Archivo:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('gb-theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') {
+      t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<style>
+  :root { --paper:#ffffff; --ink:#1c1917; --body-c:#57534e; --sand:#a8a29e; --rust:#c2410c; --btn-bg:#1c1917; --btn-fg:#fff; }
+  [data-theme="dark"] { --paper:#16120f; --ink:#ece4d8; --body-c:#b3a89c; --sand:#857b71; --rust:#e0561d; --btn-bg:#ece4d8; --btn-fg:#16120f; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--paper); color:var(--ink); font-family:'Archivo',system-ui,sans-serif;
+    min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:24px;
+  }
+  .kicker { font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--rust); margin-bottom:18px; }
+  h1 { font-family:'Big Shoulders Display',sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(64px,14vw,160px); line-height:.9; }
+  h1 span { color:var(--rust); }
+  p { color:var(--body-c); margin:20px auto 32px; max-width:44ch; }
+  a.home {
+    display:inline-block; font-family:'Big Shoulders Display',sans-serif; font-weight:700; font-size:20px;
+    letter-spacing:.08em; text-transform:uppercase; text-decoration:none;
+    background:var(--btn-bg); color:var(--btn-fg); padding:14px 28px; transition:background .15s,color .15s;
+  }
+  a.home:hover { background:var(--rust); color:#fff; }
+  .coords { margin-top:40px; font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--sand); }
+</style>
+</head>
+<body>
+  <main>
+    <div class="kicker">Incident report // GB-404</div>
+    <h1>Dud <span>round.</span></h1>
+    <p>This test site doesn't exist — the device failed to detonate, or the page
+      was decommissioned. Either way, there's nothing buried here.</p>
+    <a class="home" href="/">Return to base →</a>
+    <div class="coords">36.68°N · 107.21°W (approx.) — nothing found at this location</div>
+  </main>
+</body>
+</html>

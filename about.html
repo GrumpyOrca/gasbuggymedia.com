@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Gasbuggy Media</title>
+<meta name="description" content="Why 'Gasbuggy'? The name honors Project Gasbuggy, a 1967 nuclear test in northern New Mexico — an audacious tool aimed at an ordinary problem.">
+<link rel="canonical" href="https://gasbuggymedia.com/about.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gasbuggy Media">
+<meta property="og:title" content="About — Gasbuggy Media">
+<meta property="og:description" content="Why 'Gasbuggy'? The name honors Project Gasbuggy, a 1967 nuclear test in northern New Mexico.">
+<meta property="og:url" content="https://gasbuggymedia.com/about.html">
+<meta property="og:image" content="https://gasbuggymedia.com/assets/gasbuggy-hero-poster.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Cstyle%3E.s%7Bstroke:%231c1917%7D.f%7Bfill:%23c2410c%7D@media(prefers-color-scheme:dark)%7B.s%7Bstroke:%23ece4d8%7D.f%7Bfill:%23e0561d%7D%7D%3C/style%3E%3Ccircle%20class='s'%20cx='32'%20cy='32'%20r='26'%20fill='none'%20stroke-width='7'%20stroke-dasharray='7.2%206.42'/%3E%3Ccircle%20class='s'%20cx='32'%20cy='32'%20r='12'%20fill='none'%20stroke-width='11'%20stroke-dasharray='12.566%2012.566'%20transform='rotate(-120%2032%2032)'/%3E%3Ccircle%20class='f'%20cx='32'%20cy='32'%20r='4.2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('gb-theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') {
+      t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<style>
+  :root {
+    --paper: #ffffff;
+    --band: #fafaf9;
+    --card: #ffffff;
+    --ink: #1c1917;
+    --body-c: #57534e;
+    --prose-c: #44403c;
+    --sand: #a8a29e;
+    --hairline: #e7e5e4;
+    --rust: #c2410c;
+    --btn-bg: #1c1917;
+    --btn-fg: #ffffff;
+    --header-bg: rgba(255,255,255,.94);
+  }
+  [data-theme="dark"] {
+    --paper: #16120f;
+    --band: #1c1713;
+    --card: #1a1512;
+    --ink: #ece4d8;
+    --body-c: #b3a89c;
+    --prose-c: #c4bab0;
+    --sand: #857b71;
+    --hairline: #2e2822;
+    --rust: #e0561d;
+    --btn-bg: #ece4d8;
+    --btn-fg: #16120f;
+    --header-bg: rgba(22,18,15,.94);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Archivo', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    transition: background .25s, color .25s;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    border-bottom: 1px solid var(--hairline);
+    position: sticky; top: 0; background: var(--header-bg);
+    backdrop-filter: blur(6px); z-index: 50;
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+  .brand svg { display: block; color: var(--ink); }
+  .brand-name {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 900; font-size: 22px; letter-spacing: .06em; text-transform: uppercase;
+  }
+  .brand-name em { font-style: normal; color: var(--rust); }
+  nav.links { display: flex; gap: 24px; align-items: center; }
+  nav.links a {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .12em;
+    text-transform: uppercase; text-decoration: none; color: var(--ink);
+  }
+  nav.links a:hover { color: var(--rust); }
+  nav.links a.active { color: var(--rust); }
+  nav.links a.cta { border: 1.5px solid var(--ink); padding: 8px 14px; }
+  nav.links a.cta:hover { background: var(--ink); color: var(--paper); }
+  .theme-btn {
+    background: none; border: 1.5px solid var(--hairline); color: var(--ink);
+    width: 36px; height: 36px; cursor: pointer; display: inline-flex;
+    align-items: center; justify-content: center; padding: 0;
+  }
+  .theme-btn:hover { border-color: var(--rust); color: var(--rust); }
+  .theme-btn .icon-moon { display: none; }
+  [data-theme="dark"] .theme-btn .icon-moon { display: block; }
+  [data-theme="dark"] .theme-btn .icon-sun { display: none; }
+
+  .page { padding: 72px 0 96px; }
+  .kicker {
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--rust); margin-bottom: 18px;
+  }
+  h1 {
+    font-family: 'Big Shoulders Display', sans-serif; font-weight: 900;
+    text-transform: uppercase; font-size: clamp(44px, 7vw, 84px); line-height: .95;
+    margin-bottom: 40px;
+  }
+  .cols { display: grid; grid-template-columns: 1.2fr .8fr; gap: 56px; align-items: start; }
+  .prose p { color: var(--prose-c); margin-bottom: 1.1em; max-width: 62ch; }
+  .prose strong { color: var(--ink); }
+  .prose .pull {
+    border-left: 3px solid var(--rust); padding: 4px 0 4px 20px; margin: 28px 0;
+    font-family: 'Big Shoulders Display', sans-serif; font-weight: 700; font-size: 24px;
+    text-transform: uppercase; letter-spacing: .02em; color: var(--ink); max-width: 30ch; line-height: 1.2;
+  }
+  .spec { border: 1px solid var(--hairline); background: var(--band); padding: 24px; position: sticky; top: 96px; }
+  .spec-title {
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--rust); margin-bottom: 16px;
+    padding-bottom: 12px; border-bottom: 1px solid var(--hairline);
+  }
+  .spec dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 20px; font-size: 13px; }
+  .spec dt { font-family: 'IBM Plex Mono', monospace; color: var(--sand); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding-top: 2px; }
+  .spec dd { color: var(--ink); }
+  .back-cta {
+    display: inline-block; margin-top: 32px;
+    font-family: 'Big Shoulders Display', sans-serif; font-weight: 700; font-size: 20px;
+    letter-spacing: .08em; text-transform: uppercase; text-decoration: none;
+    background: var(--btn-bg); color: var(--btn-fg); padding: 14px 28px; transition: background .15s, color .15s;
+  }
+  .back-cta:hover { background: var(--rust); color: #fff; }
+
+  footer { border-top: 1px solid var(--hairline); padding: 32px 0 48px; }
+  .foot {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--sand);
+  }
+
+  @media (max-width: 760px) {
+    .cols { grid-template-columns: 1fr; gap: 32px; }
+    nav.links a:not(.cta) { display: none; }
+    nav.links { gap: 8px; }
+    .brand-name { font-size: 16px; }
+    nav.links a.cta { font-size: 10px; padding: 6px 8px; white-space: nowrap; }
+    .theme-btn { width: 30px; height: 30px; }
+    .spec { position: static; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-width="7" stroke-dasharray="7.2 6.42"/>
+        <circle cx="32" cy="32" r="12" fill="none" stroke="currentColor" stroke-width="11" stroke-dasharray="12.566 12.566" transform="rotate(-120 32 32)"/>
+        <circle cx="32" cy="32" r="4.2" fill="var(--rust, #c2410c)"/>
+      </svg>
+      <span class="brand-name">Gasbuggy<em>&nbsp;Media</em></span>
+    </a>
+    <nav class="links">
+      <a href="projects.html">Projects</a>
+      <a href="about.html" class="active">About</a>
+      <a class="cta" href="index.html#consult">Request a Consult</a>
+      <button class="theme-btn" onclick="gbToggle()" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="8" cy="8" r="3.4"/>
+          <line x1="8" y1="0.8" x2="8" y2="2.6"/><line x1="8" y1="13.4" x2="8" y2="15.2"/>
+          <line x1="0.8" y1="8" x2="2.6" y2="8"/><line x1="13.4" y1="8" x2="15.2" y2="8"/>
+          <line x1="2.9" y1="2.9" x2="4.2" y2="4.2"/><line x1="11.8" y1="11.8" x2="13.1" y2="13.1"/>
+          <line x1="2.9" y1="13.1" x2="4.2" y2="11.8"/><line x1="11.8" y1="4.2" x2="13.1" y2="2.9"/>
+        </svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M13.8 9.6 A6.4 6.4 0 1 1 6.4 2.2 A5 5 0 0 0 13.8 9.6 Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap">
+    <div class="kicker">About // The Name</div>
+    <h1>Why <span style="color:var(--rust)">&ldquo;Gasbuggy&rdquo;</span>?</h1>
+    <div class="cols">
+      <div class="prose">
+        <p>On December 10, 1967, the Atomic Energy Commission lowered a 29-kiloton nuclear
+          device 4,227 feet beneath the Carson National Forest in northern New Mexico and set
+          it off — an attempt to fracture rock and free natural gas. They called it
+          <strong>Project Gasbuggy</strong>, part of Operation Plowshare's search for peaceful
+          uses of the atom.</p>
+        <p>It worked, sort of. The gas came out radioactive. But you have to admire the swing:
+          an audacious tool, aimed at an ordinary problem.</p>
+        <div class="pull">An audacious tool, aimed at an ordinary problem.</div>
+        <p>That's the spirit here. Gasbuggy Media is an independent web &amp; app studio based
+          in New Mexico. We build our own projects to stay sharp — you'll find them on the
+          <a href="projects.html" style="color:var(--rust)">test range</a> — and we put the same energy into projects that clients bring us:
+          websites, web apps, mobile apps, and ideas that don't fit a template.</p>
+        <p>Unreasonable amounts of energy, applied underground, so what surfaces looks
+          effortless.</p>
+        <a class="back-cta" href="index.html#consult">Bring us your project →</a>
+      </div>
+      <aside class="spec">
+        <div class="spec-title">☢ Site record — Project Gasbuggy</div>
+        <dl>
+          <dt>Date</dt><dd>December 10, 1967</dd>
+          <dt>Yield</dt><dd>29 kilotons</dd>
+          <dt>Depth</dt><dd>4,227 ft underground</dd>
+          <dt>Location</dt><dd>Carson National Forest, ~54 mi east of Farmington, NM</dd>
+          <dt>Program</dt><dd>Operation Plowshare</dd>
+          <dt>Purpose</dt><dd>Nuclear stimulation of natural gas</dd>
+          <dt>Result</dt><dd>Technically a success. Commercially… a lesson.</dd>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Gasbuggy Media</span>
+    <span>36.68°N · 107.21°W (approx.)</span>
+    <span>Built in the desert. Deployed everywhere.</span>
+  </div>
+</footer>
+
+<script>
+  function gbToggle() {
+    var el = document.documentElement;
+    var t = el.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    el.setAttribute('data-theme', t);
+    try { localStorage.setItem('gb-theme', t); } catch (e) {}
+  }
+</script>
+</body>
+</html>
